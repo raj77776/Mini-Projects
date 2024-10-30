@@ -1,0 +1,80 @@
+* 
+{
+   margin: 0px;
+   padding: 0px;
+}
+
+h1 
+{
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    
+}
+
+body 
+{
+    background-color: #CFE79C;
+    text-align: center;
+}
+
+.container 
+{
+    height: 72vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game 
+{
+    height: 60vmin;
+    width : 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3vmin;
+    
+}
+
+.box 
+{
+    height: 18vmin;
+    width: 18vmin;
+    font-size: 8vmin;
+    border-radius: 2%;
+    box-shadow: 2px 2px 2px black;
+    color: darkgreen;
+    background-color: white;
+}
+
+#reset 
+{
+    background-color: darkred;
+    color: white;
+    font-size: 23px;
+    padding: 0.4%;
+    box-shadow: 1px 1px 1px black;
+    
+}
+
+
+.box:active
+{
+    background-color: red;
+}
+
+#Winner 
+{
+    background-color: darkgreen;
+    color: white;
+    font-size: 4.5vmin;
+    
+}
+
+.hide 
+{
+    display: none;
+}
+
