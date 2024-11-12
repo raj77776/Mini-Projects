@@ -14,13 +14,14 @@ h1
 
 body 
 {
-    background-color: #CFE79C;
+    background-color: #a2e9d4;
     text-align: center;
 }
 
+
 .container 
 {
-    height: 72vh;
+    height: 68vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,13 +50,15 @@ body
     background-color: white;
 }
 
-#reset 
+#resetbtn 
 {
     background-color: darkred;
     color: white;
+    display: inline;
     font-size: 23px;
     padding: 0.4%;
     box-shadow: 1px 1px 1px black;
+    margin-left: 100px;
     
 }
 
@@ -67,7 +70,7 @@ body
 
 #Winner 
 {
-    background-color: darkgreen;
+    background-color: blue;
     color: white;
     font-size: 4.5vmin;
     
@@ -76,5 +79,56 @@ body
 .hide 
 {
     display: none;
+}
+
+#toggle
+{
+    background-color: darkblue;
+    color: white;
+    display: inline-block;
+    margin-left: 800px;
+    margin-right: 100px;
+    padding: 0.4%;
+    border-radius: 2%;  
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 1px 1px 1px black;
+}
+
+#toggle:hover {
+    transition: all 0.1s ease-in-out;
+    transform: scale(1.2);
+}
+
+#toggle:active 
+{
+    background-color: white;
+    color: black;
+}
+
+#resetbtn:hover {
+    transition: all 0.1s ease-in-out;
+    transform: scale(1.2);
+}
+
+#resetbtn:active 
+{
+    background-color: white;
+    transition: all 0.1s ease-in-out;
+    color: black;
+}
+
+
+.dark {
+    background-color: black;
+    color: white;
+    h1 {
+        color: white;
+    }
+}
+
+.light {
+    background-color: #9ce7d1;
+    color: black;
 }
 

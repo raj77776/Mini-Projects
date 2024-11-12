@@ -1,5 +1,5 @@
 let buttons = document.querySelectorAll(".box");
-let reset = document.querySelector("#reset");
+let resetbtn = document.querySelector("#resetbtn");
 let turnO = true;
 let msgbox = document.querySelector(".msgs");
 let winner = document.querySelector("#Winner");
@@ -58,9 +58,9 @@ buttons.forEach((box) => {  // this forEach loop is used to perform work on ever
             } 
    
 
-   let checkWinner = () => { //Arrow function is used here. A function is a block of code that performs a specific task.
+   let checkWinner = () => { //Arrow function is used here. 
                              
-       for (let pattern of winStreaks) // creating a variable pattern and accessing all arrays at once stored in winStreaks using for of loop.
+       for (let pattern of winStreaks) // accessing all arrays at once stored in winStreaks using for of loop.
         {
             let pos1 = buttons[pattern[0]].innerText; // Extracting individual index of array and accessing their inner text when clicked.
             let pos2 = buttons[pattern[1]].innerText;
@@ -79,7 +79,28 @@ buttons.forEach((box) => {  // this forEach loop is used to perform work on ever
         }
    };
 
-   reset.addEventListener("click", resetGame); // calling reset function to reset game when clicked on reset button.
+   resetbtn.addEventListener("click", resetGame); // calling reset function to reset game when clicked on reset button.
+
+  
+// CODE FOR CREATING DARK AND LIGHT MODE...
+
+let mode = "light"; // setting mode variable value to light
+let btn = document.querySelector("#toggle");
+let body = document.querySelector("body"); // selecting whole body of web page.
+
+btn.addEventListener("click", () => { 
+ if (mode === "light") { // Strict Equality Check.
+    mode = "dark"; // Setting mode variable value to dark.
+    body.setAttribute("class", "dark"); 
+    
+ } else {
+    mode = "light";
+    body.setAttribute("class", "light")
+ }
+
+ console.log(mode);
+
+})
    
 
    
