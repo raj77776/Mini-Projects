@@ -85,7 +85,7 @@ buttons.forEach((box) => {  // this forEach loop is used to perform work on ever
 // CODE FOR CREATING DARK AND LIGHT MODE...
 
 let mode = "light"; // setting mode variable value to light
-let btn = document.querySelector("#toggle");
+let btn = document.querySelector("#toggle");// selecting only change mode button.
 let body = document.querySelector("body"); // selecting whole body of web page.
 
 btn.addEventListener("click", () => { 
